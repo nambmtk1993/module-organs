@@ -309,6 +309,11 @@ table.tabo thead {
     display: flex;
 }
 
+.d-flex-wrap {
+    display:flex;
+    flex-wrap: wrap;
+}
+
 .d-flex .flex-avatar {
     flex-grow: 0.5;
 }
@@ -359,5 +364,8 @@ ul.d-grid > li{
     }
     .d-grid {
         grid-template-columns: 1fr;
+    }
+    .d-flex-wrap > div:not(.news_column, .clear) {
+        flex-basis: 100%;
     }
 }
